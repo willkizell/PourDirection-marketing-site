@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Replace page title if needed -->
+  <title>PourDirection — Tap. Decide. Go.</title>
+  <meta name="description" content="Find the perfect spot. Instantly. PourDirection helps you discover bars, restaurants, dispensaries, and clubs near you." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAV
+  ============================================================ -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#" class="nav-logo">
+        <img src="assets/images/logo-icon.png" alt="PourDirection icon" class="nav-logo-icon" />
+        <img src="assets/images/logo-wordmark.png" alt="PourDirection" class="nav-logo-wordmark" />
+      </a>
+
+      <!-- Desktop nav links -->
+      <ul class="nav-links">
+        <li><a href="#screenshots" class="nav-link">App Screens</a></li>
+        <li><a href="#features" class="nav-link">What You Can Find</a></li>
+        <li><a href="#how" class="nav-link">How It Works</a></li>
+        <li><a href="#cta" class="nav-link">Get the App</a></li>
+      </ul>
+
+      <div class="nav-right">
+        <a href="#cta" class="btn btn-sm">Download</a>
+        <!-- Hamburger (mobile only) -->
+        <button class="nav-hamburger" id="navHamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile drawer -->
+    <div class="nav-drawer" id="navDrawer">
+      <ul class="nav-drawer-links">
+        <li><a href="#screenshots" class="nav-drawer-link">App Screens</a></li>
+        <li><a href="#features" class="nav-drawer-link">What You Can Find</a></li>
+        <li><a href="#how" class="nav-drawer-link">How It Works</a></li>
+        <li><a href="#cta" class="nav-drawer-link">Ready to Go Out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO
+  ============================================================ -->
+  <section class="hero" id="hero">
+    <!-- Background grid texture -->
+    <div class="hero-grid" aria-hidden="true"></div>
+    <!-- Radial glow -->
+    <div class="hero-glow" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Badge -->
+      <div class="hero-badge fade-up">Your Pocket Concierge</div>
+
+      <!-- Headline -->
+      <h1 class="hero-headline fade-up delay-1">
+        Tap. <span style="color: #1A9F86;">Decide.</span> Go.
+      </h1>
+
+      <!-- Subtext -->
+      <p class="hero-sub fade-up delay-2">
+        The quickest way to find your next favorite spot. No scrolling. No debating. Just effortless discovery.
+      </p>
+
+      <div class="hero-ctas fade-up delay-3">
+        <a href="#cta" class="btn btn-primary">Get PourDirection</a>
+      </div>
+    </div>
+
+    <!-- iPhone mockup -->
+    <div class="hero-phone fade-up delay-2">
+      <div class="iphone">
+        <div class="iphone-btn iphone-btn--vol-up"></div>
+        <div class="iphone-btn iphone-btn--vol-down"></div>
+        <div class="iphone-btn iphone-btn--power"></div>
+        <div class="iphone-screen">
+          <div class="iphone-island"></div>
+          <img src="assets/images/screen-whattodo.png" alt="PourDirection app screen" class="iphone-screenshot" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       APP SCREENS
+  ============================================================ -->
+  <section class="screenshots" id="screenshots">
+    <div class="container">
+      <div class="section-label fade-up">App Screens</div>
+      <h2 class="section-headline fade-up delay-1">Designed to feel<br />effortless.</h2>
+
+      <div class="app-showcase">
+
+        <!-- Row 1: Home — image left -->
+        <div class="app-row fade-up" style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:60px;">
+          <div class="app-row-image" style="flex:0 0 240px;width:240px;overflow:hidden;">
+            <img src="assets/App_screnes/MainLanding_no_bg.png" alt="Home screen" style="width:240px;height:auto;display:block;border-radius:20px;" />
+          </div>
+          <div class="app-row-text" style="flex:0 0 auto;width:420px;min-width:0;">
+            <span class="app-row-tag">01 — Find Your Vibe</span>
+            <h3 class="app-row-headline">What do you want<br />to do tonight?</h3>
+            <p class="app-row-desc">Open PourDirection and instantly see every option around you — bars, restaurants, clubs, dispensaries. No searching. No guessing.</p>
+          </div>
+        </div>
+
+        <!-- Row 2: Suggestion — image right -->
+        <div class="app-row app-row--reverse fade-up" style="display:flex;flex-direction:row-reverse;align-items:center;gap:96px;">
+          <div class="app-row-image" style="flex:0 0 240px;width:240px;overflow:hidden;">
+            <img src="assets/App_screnes/Suggestions_view_no_bg.png" alt="Suggestion screen" style="width:240px;height:auto;display:block;border-radius:20px;" />
+          </div>
+          <div class="app-row-text" style="flex:1;min-width:0;">
+            <span class="app-row-tag">02 — Instant Suggestions</span>
+            <h3 class="app-row-headline">A spot picked<br />just for now.</h3>
+            <p class="app-row-desc">PourDirection surfaces the best match based on what's open, nearby, and happening. One tap — you have a plan.</p>
+          </div>
+        </div>
+
+        <!-- Row 3: Compass — image left -->
+        <div class="app-row fade-up" style="display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:60px;">
+          <div class="app-row-image" style="flex:0 0 240px;width:240px;overflow:hidden;">
+            <img src="assets/App_screnes/Compass_no_border_HQ.png" alt="Compass navigation" style="width:240px;height:auto;display:block;border-radius:20px;" />
+          </div>
+          <div class="app-row-text" style="flex:0 0 auto;width:420px;min-width:0;">
+            <span class="app-row-tag">03 — Compass Navigation</span>
+            <h3 class="app-row-headline">Point.<br />Walk.</h3>
+            <p class="app-row-desc">A live compass locks onto your destination. No map-reading, no wrong turns. Just face the direction and go.</p>
+          </div>
+        </div>
+
+        <!-- Row 4: Map — image right -->
+        <div class="app-row app-row--reverse fade-up" style="display:flex;flex-direction:row-reverse;align-items:center;gap:96px;">
+          <div class="app-row-image" style="flex:0 0 240px;width:240px;overflow:hidden;">
+            <img src="assets/App_screnes/MapView_no_border_HQ.png" alt="Map view" style="width:240px;height:auto;display:block;border-radius:20px;" />
+          </div>
+          <div class="app-row-text" style="flex:1;min-width:0;">
+            <span class="app-row-tag">04 — Map View</span>
+            <h3 class="app-row-headline">See what's<br />around you.</h3>
+            <p class="app-row-desc">Every bar, restaurant, club, and dispensary plotted live on a map. Explore your surroundings at a glance.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES
+  ============================================================ -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-label fade-up">What you can find</div>
+      <!-- Replace section headline here -->
+      <h2 class="section-headline fade-up delay-1">Everything nearby.<br />Nothing to figure out.</h2>
+
+      <div class="features-grid">
+
+        <!-- Bar — teal -->
+        <div class="feature-card fade-up" style="--card-accent: #1A9F86;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M8 3H16L14 10H10L8 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 10V19M14 10V19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M7 19H17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M3 3H21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="feature-name">Find a Bar</h3>
+          <p class="feature-desc">Discover the best bars open right now near you.</p>
+        </div>
+
+        <!-- Restaurant — blue -->
+        <div class="feature-card fade-up delay-1" style="--card-accent: #4A8FE2;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M18 3V9C18 10.657 16.657 12 15 12V21" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M6 3V7M6 11V21M6 7C6 7 9 8 9 11C9 11 9 11 6 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="feature-name">Find a Restaurant</h3>
+          <p class="feature-desc">From quick bites to full dining — find it instantly.</p>
+        </div>
+
+        <!-- Dispensary — warm tan -->
+        <div class="feature-card fade-up delay-2" style="--card-accent: #C4956A;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3C9 3 7 6 7 9C7 11.5 8.5 13.5 10.5 14.5V21H13.5V14.5C15.5 13.5 17 11.5 17 9C17 6 15 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 9C9 9 10.5 10 12 9C13.5 8 15 9 15 9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="feature-name">Find a Dispensary</h3>
+          <p class="feature-desc">Locate licensed dispensaries open near you now.</p>
+        </div>
+
+        <!-- Club — red/coral -->
+        <div class="feature-card fade-up delay-3" style="--card-accent: #E05050;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 18C9 18 8 21 12 21C16 21 15 18 15 18M12 3C12 3 8 5 8 9C8 12 10 13.5 12 14C14 13.5 16 12 16 9C16 5 12 3 12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M12 14V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+          </div>
+          <h3 class="feature-name">Find a Club</h3>
+          <p class="feature-desc">Find where the night's happening, wherever you are.</p>
+        </div>
+
+        <!-- Map View — teal -->
+        <div class="feature-card fade-up" style="--card-accent: #1A9F86;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M3 7L9 4L15 7L21 4V17L15 20L9 17L3 20V7Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M9 4V17M15 7V20" stroke="currentColor" stroke-width="1.5"/></svg>
+          </div>
+          <h3 class="feature-name">Map View</h3>
+          <p class="feature-desc">See every spot plotted around you on a live map.</p>
+        </div>
+
+        <!-- Compass — teal -->
+        <div class="feature-card fade-up delay-1" style="--card-accent: #1A9F86;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M16.243 7.757L13.414 13.414L7.757 16.243L10.586 10.586L16.243 7.757Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
+          </div>
+          <h3 class="feature-name">Compass Navigation</h3>
+          <p class="feature-desc">Point and walk — built-in compass guides you there.</p>
+        </div>
+
+        <!-- Open Nearby — teal -->
+        <div class="feature-card fade-up delay-2" style="--card-accent: #1A9F86;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M12 7V12L15 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="feature-name">See What's Open Nearby</h3>
+          <p class="feature-desc">Only see places that are open and ready right now.</p>
+        </div>
+
+        <!-- Suggestions — teal -->
+        <div class="feature-card fade-up delay-3" style="--card-accent: #1A9F86;">
+          <div class="feature-icon">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M12 3L13.8 8.6H19.6L14.9 11.9L16.7 17.5L12 14.2L7.3 17.5L9.1 11.9L4.4 8.6H10.2L12 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+          </div>
+          <h3 class="feature-name">Instant Suggestions</h3>
+          <p class="feature-desc">Smart picks based on what's near and what's good.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       HOW IT WORKS
+  ============================================================ -->
+  <section class="how" id="how">
+    <div class="container">
+
+      <div class="how-header fade-up">
+        <div class="section-label">How it works</div>
+        <h2 class="how-headline">Simple by design.</h2>
+        <p class="how-sub">No account. No filters. No friction. Just open the app and go.</p>
+      </div>
+
+      <!-- Connected steps row -->
+      <div class="steps">
+
+        <!-- Step 1 -->
+        <div class="step fade-up">
+          <div class="step-card">
+            <div class="step-top">
+              <span class="step-chip">01</span>
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                  <path d="M12 2C8.686 2 6 4.686 6 8V14L4 16V17H20V16L18 14V8C18 4.686 15.314 2 12 2Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <path d="M10 17C10 18.105 10.895 19 12 19C13.105 19 14 18.105 14 17" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Tap</h3>
+            <p class="step-desc">Open PourDirection. Your location loads instantly — no setup, no account.</p>
+          </div>
+          <!-- Arrow connector -->
+          <div class="step-arrow" aria-hidden="true">
+            <svg viewBox="0 0 40 16" fill="none" width="40" height="16">
+              <path d="M0 8H34M34 8L28 3M34 8L28 13" stroke="#1A9F86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="step fade-up delay-1">
+          <div class="step-card step-card--active">
+            <div class="step-top">
+              <span class="step-chip">02</span>
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                  <rect x="5" y="3" width="14" height="18" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                  <path d="M9 8H15M9 12H15M9 16H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Decide</h3>
+            <p class="step-desc">Browse bars, restaurants, clubs, or dispensaries. See what's open right now.</p>
+          </div>
+          <div class="step-arrow" aria-hidden="true">
+            <svg viewBox="0 0 40 16" fill="none" width="40" height="16">
+              <path d="M0 8H34M34 8L28 3M34 8L28 13" stroke="#1A9F86" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="step fade-up delay-2">
+          <div class="step-card">
+            <div class="step-top">
+              <span class="step-chip">03</span>
+              <div class="step-icon">
+                <svg viewBox="0 0 24 24" fill="none" width="22" height="22">
+                  <path d="M12 21C12 21 5 15 5 9C5 5.686 8.134 3 12 3C15.866 3 19 5.686 19 9C19 15 12 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                  <circle cx="12" cy="9" r="2" stroke="currentColor" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="step-title">Go</h3>
+            <p class="step-desc">Use compass navigation to walk straight to your spot. Done.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FINAL CTA
+  ============================================================ -->
+  <section class="cta-section" id="cta">
+    <div class="cta-glow" aria-hidden="true"></div>
+    <div class="container cta-inner">
+
+      <!-- Replace logo here if needed -->
+      <img src="assets/images/logo-icon.png" alt="PourDirection" class="cta-logo fade-up" />
+
+      <!-- Replace final CTA headline -->
+      <h2 class="cta-headline fade-up delay-1">Ready to go out?</h2>
+      <!-- Replace CTA subtext -->
+      <p class="cta-sub fade-up delay-2">Your next favorite spot is closer than you think.</p>
+
+      <!-- Primary CTA button — replace href with App Store / Play Store link -->
+      <a href="#" class="btn btn-primary btn-large fade-up delay-3">Get PourDirection</a>
+
+      <div class="cta-divider fade-up delay-3" aria-hidden="true"></div>
+
+      <!-- Email capture — no backend, UI only -->
+      <div class="email-capture fade-up delay-4">
+        <p class="email-label">Be first when we launch on your platform.</p>
+        <form class="email-form" onsubmit="handleEmailSubmit(event)">
+          <!-- Replace placeholder text if needed -->
+          <input
+            type="email"
+            class="email-input"
+            placeholder="Enter your email"
+            required
+            aria-label="Email address"
+          />
+          <button type="submit" class="btn btn-primary">Get Early Access</button>
+        </form>
+        <p class="email-thanks" id="emailThanks">You're on the list. We'll be in touch.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <img src="assets/images/logo-wordmark.png" alt="PourDirection" class="footer-logo" />
+      <!-- Replace footer tagline -->
+      <p class="footer-tag">Tap. Decide. Go.</p>
+      <!-- Replace footer legal text -->
+      <p class="footer-legal">&copy; 2025 PourDirection. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
