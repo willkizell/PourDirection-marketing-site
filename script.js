@@ -66,60 +66,6 @@ window.addEventListener('scroll', () => {
 }, { passive: true });
 
 
-/* ------------------------------------------------------------
-   EMAIL FORM — Handle submission (UI only, no backend)
-   Replace this with real submission logic when ready
-   ------------------------------------------------------------ */
-async function handleEmailSubmit(event) {
-  event.preventDefault();
-
-  const form = event.target;
-  const input = form.querySelector('.email-input');
-  const btn = form.querySelector('button[type="submit"]');
-  const thanks = document.getElementById('emailThanks');
-
-  // Basic validation
-  const email = input.value.trim();
-  if (!email || !email.includes('@')) {
-    input.focus();
-    return;
-  }
-
-  // Loading state
-  const originalText = btn.textContent;
-  btn.textContent = 'Sending…';
-  btn.disabled = true;
-  input.disabled = true;
-
-  try {
-    const res = await fetch('https://hook.us1.make.com/l1vcm1z4p3k0guucpypqr2un1rua4int', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email, platform: 'website' }),
-    });
-
-    if (!res.ok) throw new Error('Server error');
-
-    // Success
-    form.style.transition = 'opacity 0.3s, transform 0.3s';
-    form.style.opacity = '0';
-    form.style.transform = 'scale(0.97)';
-    setTimeout(() => {
-      form.style.display = 'none';
-      thanks.textContent = "You're on the list 🧭";
-      thanks.classList.add('visible');
-    }, 300);
-
-  } catch (err) {
-    // Error — reset button, show inline error
-    btn.textContent = 'Something went wrong — try again';
-    btn.disabled = false;
-    input.disabled = false;
-    setTimeout(() => {
-      btn.textContent = originalText;
-    }, 3000);
-  }
-}
 
 
 /* ------------------------------------------------------------
